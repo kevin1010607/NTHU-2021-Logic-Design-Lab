@@ -1,0 +1,10 @@
+常用的Clock:
+    板子上 clk: 100MHz
+    趨近0.1秒:  clk/2^23  (0.08秒)
+    趨近1秒:    clk/2^27 (1.34秒)
+    七段顯示器: clk/2^13 ~ clk/2^17
+
+關於clock使用:
+    每個人的硬體狀況不同，若將debounce直接使用100MHz的clock，有些人沒問題，有些人會有按鍵連點(bounce)的情形，這是因為debounce時間不足。
+    我們實作的硬體大多和人互動為主，不需要讓硬體以超高速運作，就算使用clk/2^16的clock (~0.6ms)，還是遠快於人的反應能力。
+    建議使用上述和七段顯示器相同的clock來進行debounce和one-pulse，並把整個state machine也操作在同一個clock下。
