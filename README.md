@@ -48,11 +48,14 @@
 
 ### Architecture
 - Bird State
-![](https://i.imgur.com/FZghW36.png)
+
+  ![](https://i.imgur.com/FZghW36.png)
 - Process State
-![](https://i.imgur.com/NHs7BDs.png)
+
+  ![](https://i.imgur.com/NHs7BDs.png)
 - Block Diagram
-![](https://i.imgur.com/aDMidpQ.png)
+
+  ![](https://i.imgur.com/aDMidpQ.png)
 
 ### Detail
 - Please refer to the report of Final Project for more details.
